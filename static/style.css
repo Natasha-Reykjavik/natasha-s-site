@@ -218,6 +218,6 @@ h2.eyebrow{font-weight:400;margin:0}
 .book .cv{aspect-ratio:17/25;align-items:stretch}
 .book .cv img{height:100%;width:auto;max-width:100%;object-fit:contain;margin:0 auto}
 .book.soon{cursor:default}
-.book.soon .ph{border:1px dashed #cfc9c0;background:transparent;color:var(--muted);font-family:-apple-system,BlinkMacSystemFont,Arial,sans-serif;font-size:12px;letter-spacing:.24em;text-transform:uppercase}
+.book.soon .ph{border:none;background:#e9e6e1;color:var(--muted);font-family:-apple-system,BlinkMacSystemFont,Arial,sans-serif;font-size:12px;letter-spacing:.24em;text-transform:uppercase}
 @media(max-width:900px){.bookgrid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:720px){.bookgrid{grid-template-columns:repeat(2,1fr);gap:30px 18px}}
