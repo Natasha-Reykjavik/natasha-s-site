@@ -131,8 +131,8 @@ footer a{text-decoration:none;border-bottom:1px solid var(--line)}
 .named .role{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;font-size:13px;letter-spacing:.34em;text-transform:uppercase;color:var(--muted);vertical-align:.9em;margin-left:1.2em;white-space:nowrap}
 @media(max-width:720px){.named .role{display:block;margin:8px 0 0;vertical-align:baseline}}
 
-/* ---- logo: Natasha S. + LJÓS | MYNDIR on one line (Natasha, 3 Nov) ----
-   LJÓS|MYNDIR letters are ~75% of the height of the name's small letters (font-size ≈ .47 × name). */
+/* ---- logo: Natasha S. + LJÓÐ | MYNDIR on one line (Natasha, 3 Nov) ----
+   LJÓÐ|MYNDIR letters are ~75% of the height of the name's small letters (font-size ≈ .47 × name). */
 .brand{text-decoration:none;color:inherit}
 .logo{display:inline-flex;align-items:baseline;gap:.9em;font-size:clamp(20px,3.2vw,38px);line-height:1} /* same size + proportion as the entrance logo */
 .logo .nm{font-size:1em;letter-spacing:.005em}
@@ -140,7 +140,7 @@ footer a{text-decoration:none;border-bottom:1px solid var(--line)}
 .logo .word{display:inline-flex;font-size:.47em;color:var(--ink)}
 .logo .a{padding-right:.25em;border-right:1px solid #a39c94}
 .logo .b{padding-left:.55em;color:var(--ink)}
-/* entrance: LJÓS on the light half, MYNDIR in white on the dark half; the page split is the line */
+/* entrance: LJÓÐ on the light half, MYNDIR in white on the dark half; the page split is the line */
 .gatelogo{position:absolute;top:34px;left:0;right:0;display:grid;grid-template-columns:1fr 1fr;align-items:baseline;z-index:3;pointer-events:none}
 .gatelogo .l{display:flex;justify-content:flex-end;align-items:baseline;gap:.9em;font-size:clamp(20px,3.2vw,38px);line-height:1;color:var(--ink)}
 .gatelogo .a{font-size:.47em;padding-right:.25em}
