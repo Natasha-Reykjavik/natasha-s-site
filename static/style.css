@@ -134,7 +134,7 @@ footer a{text-decoration:none;border-bottom:1px solid var(--line)}
 /* ---- logo: Natasha S. + LJÓS | MYNDIR on one line (Natasha, 3 Nov) ----
    LJÓS|MYNDIR letters are ~75% of the height of the name's small letters (font-size ≈ .47 × name). */
 .brand{text-decoration:none;color:inherit}
-.logo{display:inline-flex;align-items:baseline;gap:.9em;font-size:26px;line-height:1}
+.logo{display:inline-flex;align-items:baseline;gap:.9em;font-size:clamp(20px,3.2vw,38px);line-height:1} /* same size + proportion as the entrance logo */
 .logo .nm{font-size:1em;letter-spacing:.005em}
 .logo .word,.gatelogo .a,.gatelogo .b{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;letter-spacing:.32em;text-transform:uppercase}
 .logo .word{display:inline-flex;font-size:.47em;color:var(--ink)}
@@ -151,7 +151,7 @@ footer a{text-decoration:none;border-bottom:1px solid var(--line)}
  .gatelogo .l,.gatelogo .r{font-size:30px}
  .gatelogo .a{border-right:1px solid #a39c94}
  .gatelogo .b{color:var(--muted)}
- .logo{font-size:22px}
+ .logo{font-size:30px}
 }
 /* logo follows the moving split: same ratio (1.25 : 1), same timing as the halves */
 .gatelogo{transition:grid-template-columns .55s cubic-bezier(.4,0,.2,1)}
