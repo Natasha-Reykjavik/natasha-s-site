@@ -131,24 +131,26 @@ footer a{text-decoration:none;border-bottom:1px solid var(--line)}
 .named .role{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;font-size:13px;letter-spacing:.34em;text-transform:uppercase;color:var(--muted);vertical-align:.9em;margin-left:1.2em;white-space:nowrap}
 @media(max-width:720px){.named .role{display:block;margin:8px 0 0;vertical-align:baseline}}
 
-/* ---- logo: Natasha S. + LJÓ|Ð over reflected LJÓ|SMYNDIR ---- */
+/* ---- logo: Natasha S. + LJÓS | MYNDIR on one line (Natasha, 3 Nov) ----
+   LJÓS|MYNDIR letters are ~75% of the height of the name's small letters (font-size ≈ .47 × name). */
 .brand{text-decoration:none;color:inherit}
-.logo{display:inline-flex;align-items:center;gap:.9em;font-size:26px;line-height:1}
+.logo{display:inline-flex;align-items:baseline;gap:.9em;font-size:26px;line-height:1}
 .logo .nm{font-size:1em;letter-spacing:.005em}
-.logo .roles{display:grid;grid-template-columns:auto auto;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;font-size:9px;letter-spacing:.36em;line-height:1.55;text-transform:uppercase;color:var(--muted)}
-.logo .rt{text-align:right;padding-right:.3em;border-right:1px solid #a39c94;color:var(--ink)}
-.logo .en{padding-left:.3em}
-.mir{display:inline-block;transform:scaleY(-1);opacity:.45;-webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 90%);mask-image:linear-gradient(to bottom,transparent 0%,#000 90%)}
-/* entrance: the logo's thin line sits exactly on the page split */
-.gatelogo{position:absolute;top:34px;left:0;right:0;display:grid;grid-template-columns:1fr 1fr;align-items:center;z-index:3;pointer-events:none}
-.gatelogo .l{display:flex;justify-content:flex-end;align-items:center;gap:.9em;font-size:clamp(20px,3.2vw,38px);line-height:1;color:var(--ink)}
-.gatelogo .roots,.gatelogo .r{display:flex;flex-direction:column;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;font-size:14px;letter-spacing:.36em;line-height:1.55;text-transform:uppercase}
-.gatelogo .roots{text-align:right;padding-right:.3em;border-right:1px solid #a39c94}
-.gatelogo .r{padding-left:.3em;color:#a39c94}
+.logo .word,.gatelogo .a,.gatelogo .b{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;letter-spacing:.32em;text-transform:uppercase}
+.logo .word{display:inline-flex;font-size:.47em;color:var(--ink)}
+.logo .a{padding-right:.25em;border-right:1px solid #a39c94}
+.logo .b{padding-left:.55em;color:var(--muted)}
+/* entrance: LJÓS on the light half, MYNDIR in white on the dark half; the page split is the line */
+.gatelogo{position:absolute;top:34px;left:0;right:0;display:grid;grid-template-columns:1fr 1fr;align-items:baseline;z-index:3;pointer-events:none}
+.gatelogo .l{display:flex;justify-content:flex-end;align-items:baseline;gap:.9em;font-size:clamp(20px,3.2vw,38px);line-height:1;color:var(--ink)}
+.gatelogo .a{font-size:.47em;padding-right:.25em}
+.gatelogo .r{font-size:clamp(20px,3.2vw,38px);line-height:1}
+.gatelogo .b{font-size:.47em;padding-left:.55em;color:#fff}
 @media(max-width:720px){
  .gatelogo{grid-template-columns:auto auto;justify-content:center;top:18px}
- .gatelogo .l{font-size:30px}.gatelogo .roots,.gatelogo .r{font-size:9px}
- .gatelogo .r{color:var(--muted)}
+ .gatelogo .l,.gatelogo .r{font-size:30px}
+ .gatelogo .a{border-right:1px solid #a39c94}
+ .gatelogo .b{color:var(--muted)}
  .logo{font-size:22px}
 }
 /* logo follows the moving split: same ratio (1.25 : 1), same timing as the halves */
