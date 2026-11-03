@@ -10,7 +10,7 @@
 </div></section>
 
 <section id="books">
-  <div class="wrap"><span class="eyebrow">Books</span></div>
+  <div class="wrap"><h2 class="eyebrow">Books</h2></div>
   <div class="railbox">
     <button class="arrow prev" aria-label="Previous">&larr;</button><button class="arrow next" aria-label="Next">&rarr;</button>
     <div class="rail books">
@@ -46,7 +46,7 @@
       <article class="ncard{% if not n.picture %} noimg{% endif %}">
         {% if n.picture %}<div class="pic{% if n.is_cover %} cover{% endif %}{% if n.image_fit == 'contain' %} contain{% endif %}"><img loading="lazy" src="{{ n.picture|img(600) }}" alt="{% if n.is_cover %}Cover of {{ n.book }}{% else %}{{ n.title }}{% endif %}">{% if local and n.pending and not n.is_cover %}<span class="pendingtag">awaiting permission</span>{% endif %}</div>{% if n.image_credit and not n.is_cover %}<div class="credit">Photo: {{ n.image_credit }}</div>{% endif %}{% endif %}
         <div class="when">{{ n.when }}</div>
-        <h4>{% if n.links|length == 1 %}<a href="{{ n.links[0].url }}" target="_blank" rel="noopener">{{ n.title }}</a>{% else %}{{ n.title }}{% endif %}</h4>
+        <h3 class="ntitle">{% if n.links|length == 1 %}<a href="{{ n.links[0].url }}" target="_blank" rel="noopener">{{ n.title }}</a>{% else %}{{ n.title }}{% endif %}</h3>
         {{ n.html }}
         {% if n.excerpt %}<blockquote class="excerpt">«{{ n.excerpt }}»{% if n.excerpt_source %}<cite>— {{ n.excerpt_source }}</cite>{% endif %}</blockquote>{% endif %}
         {% if n.links %}<p class="sources">{% for l in n.links %}<a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.source }}</a>{% if not loop.last %} &middot; {% endif %}{% endfor %}</p>{% endif %}
