@@ -18,7 +18,8 @@ section.first{border-top:none;padding-top:64px}
 header.top{position:sticky;top:0;background:rgba(246,245,242,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:40}
 header.top .wrap{display:flex;justify-content:space-between;align-items:baseline;padding-top:16px;padding-bottom:16px;gap:16px}
 .name{font-size:16px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none}
-.switch a{margin-left:22px;text-decoration:none;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.switch{display:flex;flex-shrink:0;white-space:nowrap}
+.switch a{margin-left:18px;text-decoration:none;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 .switch a.on{color:var(--ink);border-bottom:1px solid var(--ink)}
 /* entrance */
 .gate{position:fixed;inset:0;display:flex;background:var(--paper)}
@@ -100,7 +101,7 @@ footer a{text-decoration:none;border-bottom:1px solid var(--line)}
  .rail img{height:46vh;min-height:0}
  .arrow{display:none}
  .news li{grid-template-columns:1fr;gap:4px}
- header.top .wrap{flex-direction:column;gap:8px}.switch a{margin:0 18px 0 0}
+ header.top .wrap{flex-direction:column;gap:8px}.switch{width:100%;justify-content:space-between}.switch a{margin:0;font-size:11px;letter-spacing:.08em}
 }
 
 /* stacked (Sarakhanov-style) layout */
