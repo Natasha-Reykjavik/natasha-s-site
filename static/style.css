@@ -139,7 +139,7 @@ footer a{text-decoration:none;border-bottom:1px solid var(--line)}
 .logo .word,.gatelogo .a,.gatelogo .b{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;letter-spacing:.32em;text-transform:uppercase}
 .logo .word{display:inline-flex;font-size:.47em;color:var(--ink)}
 .logo .a{padding-right:.25em;border-right:1px solid #a39c94}
-.logo .b{padding-left:.55em;color:var(--muted)}
+.logo .b{padding-left:.55em;color:var(--ink)}
 /* entrance: LJÓS on the light half, MYNDIR in white on the dark half; the page split is the line */
 .gatelogo{position:absolute;top:34px;left:0;right:0;display:grid;grid-template-columns:1fr 1fr;align-items:baseline;z-index:3;pointer-events:none}
 .gatelogo .l{display:flex;justify-content:flex-end;align-items:baseline;gap:.9em;font-size:clamp(20px,3.2vw,38px);line-height:1;color:var(--ink)}
