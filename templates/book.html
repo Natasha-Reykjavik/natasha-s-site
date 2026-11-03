@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block title %}{{ b.title }} — {{ site.name }}{% endblock %}
 {% block content %}
-<section class="first"><div class="wrap">
+<section class="first"><div class="wrap bookwrap">
   <a class="back sans" href="literature.html#books">&larr; All books</a>
   <div class="bookpage">
     <div class="cv">{% if b.cover %}<img src="{{ b.cover|img(1400) }}" alt="{{ b.title }}">{% endif %}</div>

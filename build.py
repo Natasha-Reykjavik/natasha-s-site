@@ -135,7 +135,9 @@ def main():
 
     env = Environment(loader=FileSystemLoader(os.path.join(ROOT, "templates")), autoescape=select_autoescape(["html"]))
     env.filters["img"] = img
-    common = dict(site=site, root="", draft=DRAFT, local=LOCAL)
+    import hashlib  # cache-busting: browsers load the new CSS as soon as it changes
+    css_v = hashlib.md5(open(os.path.join(ROOT, "static", "style.css"), "rb").read()).hexdigest()[:8]
+    common = dict(site=site, root="", draft=DRAFT, local=LOCAL, css_v=css_v)
 
     def write(name, tpl, **ctx):
         html = env.get_template(tpl).render(**common, **ctx)
