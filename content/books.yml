@@ -68,3 +68,13 @@ books:
   description: A Russian-language collection of stories and poems by Russian authors about contemporary families. It includes Natasha S.’s short story «На десерт мороженое» (*Ís í eftirrétt*).
   link: ''
   show: true
+- title: Coming soon
+  kind: ''
+  publisher: ''
+  year: ''
+  prize: ''
+  cover: ''
+  description: ''
+  link: ''
+  show: true
+  coming_soon: true

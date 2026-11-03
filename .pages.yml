@@ -44,6 +44,7 @@ content:
           - { name: cover, label: "Обложка", type: image }
           - { name: description, label: "Описание книги", type: text, description: "Показывается на странице книги справа от обложки. Новый абзац — пустая строка" }
           - { name: link, label: "Ссылка (необязательно)", type: string }
+          - { name: coming_soon, label: "Скоро (Coming soon)", type: boolean, default: false, description: "Карточка «Coming soon» без отдельной страницы. Можно оставить пустой или добавить название/обложку будущей книги" }
           - { name: show, label: "Показывать на сайте", type: boolean, default: true }
 
   - name: published

@@ -148,7 +148,8 @@ def main():
     write("literature.html", "literature.html", side="literature",
           about=load_md(C("literature-about.md")), books=books, published=published, news=news, news_years=news_years)
     for b in books:
-        write("book-%s.html" % b["slug"], "book.html", side="literature", b=b)
+        if not b.get("coming_soon"):
+            write("book-%s.html" % b["slug"], "book.html", side="literature", b=b)
     # Photography overview: one big cover per category, one under another (as sergeisarakhanov.com/projects).
     # Inside a gallery, two layouts for now (decision pending), switchable on draft builds:
     #   line    — photos in one sideways line (wheel / arrows / swipe)   photography-<slug>.html

@@ -213,18 +213,11 @@ h2.eyebrow{font-weight:400;margin:0}
 .bookpage .desc{max-width:60ch;margin-top:22px}
 .bookpage .more{font-size:12px;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid var(--line)}
 @media(max-width:720px){.bookgrid{grid-template-columns:repeat(2,1fr);gap:30px 18px}.bookpage{grid-template-columns:1fr;gap:28px}}
-/* staggered ("scattered") like option C/2: same-size covers, each at its own height, all visible, no scrolling */
-.bookgrid{align-items:start;gap:28px 40px}
-.bookgrid .book:nth-child(5n+2){margin-top:72px}
-.bookgrid .book:nth-child(5n+3){margin-top:24px}
-.bookgrid .book:nth-child(5n+4){margin-top:96px}
-.bookgrid .book:nth-child(5n+5){margin-top:44px}
-@media(max-width:720px){.bookgrid .book:nth-child(even){margin-top:48px}.bookgrid .book:nth-child(odd){margin-top:0}}
-/* books fill the page in two balanced rows (7 books → 4 + 3, last row centred); covers grow to fit */
-.bookgrid{display:flex;flex-wrap:wrap;justify-content:center;gap:36px 44px}
-.bookgrid .book{flex:0 0 calc((100% - (var(--cols) - 1) * 44px) / var(--cols))}
-.bookgrid .book:nth-child(n){margin-top:0}
-.bookgrid .book:nth-child(4n+2){margin-top:64px}
-.bookgrid .book:nth-child(4n+3){margin-top:22px}
-.bookgrid .book:nth-child(4n+4){margin-top:86px}
-@media(max-width:720px){.bookgrid{gap:28px 18px}.bookgrid .book{flex-basis:calc(50% - 9px)}.bookgrid .book:nth-child(n){margin-top:0}.bookgrid .book:nth-child(even){margin-top:48px}}
+/* books: 4 per row, every cover the same height, rows aligned; new books simply join the order (Marina, 3 Nov) */
+.bookgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:48px 40px;align-items:start}
+.book .cv{aspect-ratio:17/25;align-items:stretch}
+.book .cv img{height:100%;width:auto;max-width:100%;object-fit:contain;margin:0 auto}
+.book.soon{cursor:default}
+.book.soon .ph{border:1px dashed #cfc9c0;background:transparent;color:var(--muted);font-family:-apple-system,BlinkMacSystemFont,Arial,sans-serif;font-size:12px;letter-spacing:.24em;text-transform:uppercase}
+@media(max-width:900px){.bookgrid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:720px){.bookgrid{grid-template-columns:repeat(2,1fr);gap:30px 18px}}

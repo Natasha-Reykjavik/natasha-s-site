@@ -11,14 +11,22 @@
 
 <section id="books">
   <div class="wrap"><h2 class="eyebrow">Books</h2>
-    <div class="bookgrid" style="--cols:{{ ((books|length) + 1) // 2 }}">
+    <div class="bookgrid">
     {% for b in books %}
+      {% if b.coming_soon %}
+      <div class="book soon">
+        <div class="cv">{% if b.cover %}<img loading="lazy" src="{{ b.cover|img(700) }}" alt="{{ b.title }}">{% else %}<div class="ph">Coming soon</div>{% endif %}</div>
+        {% if b.title and b.title != 'Coming soon' %}<div class="t">{{ b.title }}</div>{% endif %}
+        {% if b.kind %}<div class="m">{{ b.kind }}</div>{% endif %}{% if b.publisher %}<div class="m">{{ b.publisher }}{% if b.year %}, {{ b.year }}{% endif %}</div>{% endif %}
+      </div>
+      {% else %}
       <a class="book" href="book-{{ b.slug }}.html">
         <div class="cv">{% if b.cover %}<img loading="lazy" src="{{ b.cover|img(700) }}" alt="{{ b.title }}">{% else %}<div class="ph">{{ b.title }}</div>{% endif %}</div>
         <div class="t">{{ b.title }}</div>
         <div class="m">{{ b.kind }}</div><div class="m">{{ b.publisher }}, {{ b.year }}</div>
         {% if b.prize %}<div class="prize">{{ b.prize }}</div>{% endif %}
       </a>
+      {% endif %}
     {% endfor %}
     </div>
   </div>
