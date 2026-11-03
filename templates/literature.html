@@ -11,7 +11,7 @@
 
 <section id="books">
   <div class="wrap"><h2 class="eyebrow">Books</h2>
-    <div class="bookgrid">
+    <div class="bookgrid" style="--cols:{{ ((books|length) + 1) // 2 }}">
     {% for b in books %}
       <a class="book" href="book-{{ b.slug }}.html">
         <div class="cv">{% if b.cover %}<img loading="lazy" src="{{ b.cover|img(700) }}" alt="{{ b.title }}">{% else %}<div class="ph">{{ b.title }}</div>{% endif %}</div>
