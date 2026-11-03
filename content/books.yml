@@ -5,7 +5,10 @@ books:
   year: 2025
   prize: Maístjarnan 2026
   cover: /media/books/mara.jpg
-  description: ''
+  description: 'Natasha S.’s second poetry collection. *Mara kemur í heimsókn* is about coming home to Russia after a long absence, and at the same time a reckoning with the political and cultural situation there.
+
+
+    Winner of the Maístjarnan Award 2026.'
   link: ''
   show: true
 - title: Skáldreki
@@ -13,7 +16,7 @@ books:
   publisher: Una útgáfuhús
   year: 2023
   prize: ''
-  cover: /media/books/skaldreki.jpg
+  cover: /media/books/skaldreki-is.jpg
   description: Á síðustu áratugum hefur ört fjölgandi hópur innflytjenda á Íslandi auðgað menningu landsins og listir. Á meðal þeirra sem skolað hefur á land leynast rithöfundar og skáld. Sum hver eru enn svamlandi á grynningunum, önnur hafa náð landi, enn önnur hafa stigið inn á bókmenntasviðið. Þessir aðkomuhöfundar eru skáldreki, frjósöm gjöf hafsins. Í þessu ritgerðasafni segja tíu höfundar af erlendum uppruna frá sögu sinni, löngunum og þrám; fjalla um búferlaflutninga, að fóta sig í nýrri menningu, að skilja og finna rödd sína á íslensku eða að ná til nýrra lesenda á sínu eigin tungumáli. Hér er á ferð ferskt sjónarhorn, frumleg málbeiting og öðruvísi sögur. Hörund. Bein. Kjöt. Fita. Gjörðu svo vel.
   link: ''
   show: true
@@ -32,7 +35,10 @@ books:
   year: 2022
   prize: Tómas Guðmundsson Prize 2022
   cover: /media/books/maltaka.jpg
-  description: ''
+  description: 'Natasha S.’s first poetry collection.
+
+
+    Winner of the Tómas Guðmundsson Literary Prize 2022; nominated for the Maístjarnan Award 2023.'
   link: ''
   show: true
 - title: Polífonía af erlendum uppruna
@@ -41,7 +47,7 @@ books:
   year: 2021
   prize: ''
   cover: /media/books/polifonia.jpg
-  description: ''
+  description: An anthology of poetry by poets of foreign origin writing in Icelandic, edited by Natasha S., who is also one of its authors.
   link: ''
   show: true
 - title: Магма / Kvika
@@ -50,7 +56,7 @@ books:
   year: 2022
   prize: ''
   cover: /media/books/magma.jpg
-  description: ''
+  description: Natasha S.’s translation into Russian of *Kvika* (2019) by Þóra Hjörleifsdóttir.
   link: ''
   show: true
 - title: Одной цепью
@@ -59,6 +65,6 @@ books:
   year: 2021
   prize: ''
   cover: /media/books/odnoi-tsepyu.jpg
-  description: ''
+  description: A Russian-language collection of stories and poems by Russian authors about contemporary families. It includes Natasha S.’s short story «На десерт мороженое» (*Ís í eftirrétt*).
   link: ''
   show: true
