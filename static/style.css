@@ -230,3 +230,5 @@ h2.eyebrow{font-weight:400;margin:0}
 .coopcontact{border-top:1px solid var(--line);padding-top:28px;max-width:900px}
 .coopcontact .mail{font-size:clamp(20px,2.4vw,28px);text-decoration:none;border-bottom:1px solid var(--line)}
 .coopcontact .meta{margin-top:12px}
+
+@media(max-width:720px){.gate .label{padding:24px 12px}.gate .sub{white-space:nowrap;font-size:min(11px,3.05vw);letter-spacing:.12em}}
