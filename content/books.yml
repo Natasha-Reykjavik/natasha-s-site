@@ -1,80 +1,99 @@
 books:
-- title: Mara kemur í heimsókn
-  kind: Poetry
-  publisher: Benedikt
-  year: 2025
-  prize: Maístjarnan 2026
-  cover: /media/books/mara.jpg
-  description: 'Natasha S.’s second poetry collection. *Mara kemur í heimsókn* is about coming home to Russia after a long absence, and at the same time a reckoning with the political and cultural situation there.
+  - title: Mara kemur í heimsókn
+    kind: Poetry
+    publisher: Benedikt
+    year: 2025
+    prize: Maístjarnan 2026
+    cover: /media/ns-cover-mara.jpg
+    description: >-
+      Natasha S.’s second poetry collection. *Mara kemur í heimsókn* is about
+      coming home to Russia after a long absence, and at the same time a
+      reckoning with the political and cultural situation there.
 
 
-    Winner of the Maístjarnan Award 2026.'
-  link: ''
-  show: true
-- title: Skáldreki
-  kind: Essays — editor, co-author (Icelandic edition)
-  publisher: Una útgáfuhús
-  year: 2023
-  prize: ''
-  cover: /media/books/skaldreki-is.jpg
-  description: Á síðustu áratugum hefur ört fjölgandi hópur innflytjenda á Íslandi auðgað menningu landsins og listir. Á meðal þeirra sem skolað hefur á land leynast rithöfundar og skáld. Sum hver eru enn svamlandi á grynningunum, önnur hafa náð landi, enn önnur hafa stigið inn á bókmenntasviðið. Þessir aðkomuhöfundar eru skáldreki, frjósöm gjöf hafsins. Í þessu ritgerðasafni segja tíu höfundar af erlendum uppruna frá sögu sinni, löngunum og þrám; fjalla um búferlaflutninga, að fóta sig í nýrri menningu, að skilja og finna rödd sína á íslensku eða að ná til nýrra lesenda á sínu eigin tungumáli. Hér er á ferð ferskt sjónarhorn, frumleg málbeiting og öðruvísi sögur. Hörund. Bein. Kjöt. Fita. Gjörðu svo vel.
-  link: ''
-  show: true
-- title: Writers adrift
-  kind: Essays — editor, co-author (English edition)
-  publisher: Una útgáfuhús
-  year: 2023
-  prize: ''
-  cover: /media/books/writers-adrift-en.jpg
-  description: Icelanders used to be a very efficient nation, utilizing everything that washed ashore. The ocean brought wood, jetsam, and sometimes even a beached whale (hvalreki) that could feed a whole village. In recent years, a rapidly growing group of newcomers in Iceland has enriched the country’s culture and arts. Writers and poets are hidden among those who have washed ashore. Some of them are still floating in the shallows, others have reached the shore, and still others have already joined the literary scene. These advent authors are poets ashore, fertile gifts from the deep. In this collection of essays, ten authors of foreign origin tell their stories, write about their desires and aspirations; talk about migration, finding their place in a new culture, about understanding and finding one’s voice in Icelandic, or reaching new readers in a foreign language. Here is a fresh perspective, original language, and different stories. Skin. Bones. Meat. Fat. Take what you like the most. They are yours now.
-  link: ''
-  show: true
-- title: Máltaka á stríðstímum
-  kind: Poetry
-  publisher: Una útgáfuhús
-  year: 2022
-  prize: Tómas Guðmundsson Prize 2022
-  cover: /media/books/maltaka.jpg
-  description: 'Natasha S.’s first poetry collection.
+      Winner of the Maístjarnan Award 2026.
+    coming_soon: false
+    show: true
+  - title: Skáldreki
+    kind: Essays — editor, co-author (Icelandic edition)
+    publisher: Una útgáfuhús
+    year: 2023
+    cover: /media/books/skaldreki-is.jpg
+    description: Á síðustu áratugum hefur ört fjölgandi hópur innflytjenda á Íslandi
+      auðgað menningu landsins og listir. Á meðal þeirra sem skolað hefur á land
+      leynast rithöfundar og skáld. Sum hver eru enn svamlandi á grynningunum,
+      önnur hafa náð landi, enn önnur hafa stigið inn á bókmenntasviðið. Þessir
+      aðkomuhöfundar eru skáldreki, frjósöm gjöf hafsins. Í þessu ritgerðasafni
+      segja tíu höfundar af erlendum uppruna frá sögu sinni, löngunum og þrám;
+      fjalla um búferlaflutninga, að fóta sig í nýrri menningu, að skilja og
+      finna rödd sína á íslensku eða að ná til nýrra lesenda á sínu eigin
+      tungumáli. Hér er á ferð ferskt sjónarhorn, frumleg málbeiting og öðruvísi
+      sögur. Hörund. Bein. Kjöt. Fita. Gjörðu svo vel.
+    coming_soon: false
+    show: true
+  - title: Writers adrift
+    kind: Essays — editor, co-author (English edition)
+    publisher: Una útgáfuhús
+    year: 2023
+    cover: /media/books/writers-adrift-en.jpg
+    description: Icelanders used to be a very efficient nation, utilizing everything
+      that washed ashore. The ocean brought wood, jetsam, and sometimes even a
+      beached whale (hvalreki) that could feed a whole village. In recent years,
+      a rapidly growing group of newcomers in Iceland has enriched the country’s
+      culture and arts. Writers and poets are hidden among those who have washed
+      ashore. Some of them are still floating in the shallows, others have
+      reached the shore, and still others have already joined the literary
+      scene. These advent authors are poets ashore, fertile gifts from the deep.
+      In this collection of essays, ten authors of foreign origin tell their
+      stories, write about their desires and aspirations; talk about migration,
+      finding their place in a new culture, about understanding and finding
+      one’s voice in Icelandic, or reaching new readers in a foreign language.
+      Here is a fresh perspective, original language, and different stories.
+      Skin. Bones. Meat. Fat. Take what you like the most. They are yours now.
+    coming_soon: false
+    show: true
+  - title: Máltaka á stríðstímum
+    kind: Poetry
+    publisher: Una útgáfuhús
+    year: 2022
+    prize: Tómas Guðmundsson Prize 2022
+    cover: /media/books/maltaka.jpg
+    description: >-
+      Natasha S.’s first poetry collection.
 
 
-    Winner of the Tómas Guðmundsson Literary Prize 2022; nominated for the Maístjarnan Award 2023.'
-  link: ''
-  show: true
-- title: Polífonía af erlendum uppruna
-  kind: Poetry anthology — editor, co-author
-  publisher: Una útgáfuhús
-  year: 2021
-  prize: ''
-  cover: /media/books/polifonia.jpg
-  description: An anthology of poetry by poets of foreign origin writing in Icelandic, edited by Natasha S., who is also one of its authors.
-  link: ''
-  show: true
-- title: Магма / Kvika
-  kind: Translation of Þóra Hjörleifsdóttir
-  publisher: Дримбук
-  year: 2022
-  prize: ''
-  cover: /media/books/magma.jpg
-  description: Natasha S.’s translation into Russian of *Kvika* (2019) by Þóra Hjörleifsdóttir.
-  link: ''
-  show: true
-- title: Одной цепью
-  kind: Short story — «На десерт мороженое»
-  publisher: Есть смысл
-  year: 2021
-  prize: ''
-  cover: /media/books/odnoi-tsepyu.jpg
-  description: A Russian-language collection of stories and poems by Russian authors about contemporary families. It includes Natasha S.’s short story «На десерт мороженое» (*Ís í eftirrétt*).
-  link: ''
-  show: true
-- title: Coming soon
-  kind: ''
-  publisher: ''
-  year: ''
-  prize: ''
-  cover: ''
-  description: ''
-  link: ''
-  show: true
-  coming_soon: true
+      Winner of the Tómas Guðmundsson Literary Prize 2022; nominated for the
+      Maístjarnan Award 2023.
+    coming_soon: false
+    show: true
+  - title: Polífonía af erlendum uppruna
+    kind: Poetry anthology — editor, co-author
+    publisher: Una útgáfuhús
+    year: 2021
+    cover: /media/books/polifonia.jpg
+    description: An anthology of poetry by poets of foreign origin writing in
+      Icelandic, edited by Natasha S., who is also one of its authors.
+    coming_soon: false
+    show: true
+  - title: Магма / Kvika
+    kind: Translation of Þóra Hjörleifsdóttir
+    publisher: Дримбук
+    year: 2022
+    cover: /media/books/magma.jpg
+    description: Natasha S.’s translation into Russian of *Kvika* (2019) by Þóra
+      Hjörleifsdóttir.
+    coming_soon: false
+    show: true
+  - title: Одной цепью
+    kind: Short story — «На десерт мороженое»
+    publisher: Есть смысл
+    year: 2021
+    cover: /media/books/odnoi-tsepyu.jpg
+    description: A Russian-language collection of stories and poems by Russian
+      authors about contemporary families. It includes Natasha S.’s short story
+      «На десерт мороженое» (*Ís í eftirrétt*).
+    coming_soon: false
+    show: true
+  - title: Coming soon
+    coming_soon: true
+    show: true
