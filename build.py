@@ -82,7 +82,11 @@ def main():
         if n.get("link") and not n["links"]:
             n["links"] = [{"source": "Read more", "url": n["link"]}]
         # someone else's photo (press) shows only once permission is ticked; drafts preview it with a badge
-        n["pending"] = bool(n.get("image")) and n.get("image_credit") and not n.get("image_permission")
+        # her choice of picture: uploaded file, else a picture URL; independent of the links
+        n["image"] = n.get("image") or (n.get("image_url") or "").strip()
+        # "hold" = waiting for the photographer's OK (old files: image_permission: false + a credit)
+        n["pending"] = bool(n.get("image")) and (bool(n.get("hold_image")) or
+                       (bool(n.get("image_credit")) and n.get("image_permission") is False))
         if n["pending"] and not LOCAL:
             n["image"] = ""
         # picture: her own image if given, else the cover of the related book
