@@ -5,14 +5,25 @@ books:
   year: 2025
   prize: Maístjarnan 2026
   cover: /media/books/mara.jpg
+  description: ''
   link: ''
   show: true
-- title: Skáldreki // Writers adrift
-  kind: Essays — editor, co-author
+- title: Skáldreki
+  kind: Essays — editor, co-author (Icelandic edition)
   publisher: Una útgáfuhús
   year: 2023
   prize: ''
   cover: /media/books/skaldreki.jpg
+  description: Icelanders used to be a very efficient nation, utilizing everything that washed ashore. The ocean brought wood, jetsam, and sometimes even a beached whale (hvalreki) that could feed a whole village. In recent years, a rapidly growing group of newcomers in Iceland has enriched the country’s culture and arts. Writers and poets are hidden among those who have washed ashore. Some of them are still floating in the shallows, others have reached the shore, and still others have already joined the literary scene. These advent authors are poets ashore, fertile gifts from the deep. In this collection of essays, ten authors of foreign origin tell their stories, write about their desires and aspirations; talk about migration, finding their place in a new culture, about understanding and finding one’s voice in Icelandic, or reaching new readers in a foreign language. Here is a fresh perspective, original language, and different stories. Skin. Bones. Meat. Fat. Take what you like the most. They are yours now.
+  link: ''
+  show: true
+- title: Writers adrift
+  kind: Essays — editor, co-author (English edition)
+  publisher: Una útgáfuhús
+  year: 2023
+  prize: ''
+  cover: /media/books/skaldreki.jpg
+  description: Icelanders used to be a very efficient nation, utilizing everything that washed ashore. The ocean brought wood, jetsam, and sometimes even a beached whale (hvalreki) that could feed a whole village. In recent years, a rapidly growing group of newcomers in Iceland has enriched the country’s culture and arts. Writers and poets are hidden among those who have washed ashore. Some of them are still floating in the shallows, others have reached the shore, and still others have already joined the literary scene. These advent authors are poets ashore, fertile gifts from the deep. In this collection of essays, ten authors of foreign origin tell their stories, write about their desires and aspirations; talk about migration, finding their place in a new culture, about understanding and finding one’s voice in Icelandic, or reaching new readers in a foreign language. Here is a fresh perspective, original language, and different stories. Skin. Bones. Meat. Fat. Take what you like the most. They are yours now.
   link: ''
   show: true
 - title: Máltaka á stríðstímum
@@ -21,6 +32,7 @@ books:
   year: 2022
   prize: Tómas Guðmundsson Prize 2022
   cover: /media/books/maltaka.jpg
+  description: ''
   link: ''
   show: true
 - title: Polífonía af erlendum uppruna
@@ -29,6 +41,7 @@ books:
   year: 2021
   prize: ''
   cover: /media/books/polifonia.jpg
+  description: ''
   link: ''
   show: true
 - title: Магма / Kvika
@@ -37,6 +50,7 @@ books:
   year: 2022
   prize: ''
   cover: /media/books/magma.jpg
+  description: ''
   link: ''
   show: true
 - title: Одной цепью
@@ -45,5 +59,6 @@ books:
   year: 2021
   prize: ''
   cover: /media/books/odnoi-tsepyu.jpg
+  description: ''
   link: ''
   show: true

@@ -196,3 +196,19 @@ footer a{text-decoration:none;border-bottom:1px solid var(--line)}
 
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 h2.eyebrow{font-weight:400;margin:0}
+
+/* ---- books: all covers at once, same size; one light page per book (Natasha, 3 Nov) ---- */
+.bookgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:44px 32px;margin-top:30px}
+.book{display:block;text-decoration:none;color:inherit}
+.book .cv{aspect-ratio:2/3;display:flex;align-items:flex-end;justify-content:center}
+.book .cv img{max-width:100%;max-height:100%;object-fit:contain;display:block;box-shadow:0 1px 0 rgba(0,0,0,.08),0 18px 38px -22px rgba(0,0,0,.45);transition:transform .3s}
+.book:hover .cv img{transform:translateY(-4px)}
+.book .ph{width:100%;height:100%;background:#eceae5;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;font-size:18px}
+.book .t{font-size:17px;margin-top:16px;line-height:1.3}
+.book .m{font-size:13px;color:var(--muted)}
+.bookpage{display:grid;grid-template-columns:minmax(240px,420px) 1fr;gap:64px;align-items:start;margin-top:30px}
+.bookpage .cv img{width:100%;height:auto;display:block;box-shadow:0 1px 0 rgba(0,0,0,.08),0 24px 48px -26px rgba(0,0,0,.5)}
+.bookpage h1{font-size:clamp(30px,4vw,48px);line-height:1.1;margin-bottom:14px}
+.bookpage .desc{max-width:60ch;margin-top:22px}
+.bookpage .more{font-size:12px;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid var(--line)}
+@media(max-width:720px){.bookgrid{grid-template-columns:repeat(2,1fr);gap:30px 18px}.bookpage{grid-template-columns:1fr;gap:28px}}

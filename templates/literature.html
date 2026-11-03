@@ -10,17 +10,15 @@
 </div></section>
 
 <section id="books">
-  <div class="wrap"><h2 class="eyebrow">Books</h2></div>
-  <div class="railbox">
-    <button class="arrow prev" aria-label="Previous">&larr;</button><button class="arrow next" aria-label="Next">&rarr;</button>
-    <div class="rail books">
+  <div class="wrap"><h2 class="eyebrow">Books</h2>
+    <div class="bookgrid">
     {% for b in books %}
-      <figure onclick="lb(this)" data-big="{{ b.cover|img(1400) }}" data-title="{{ b.title }}" data-meta="{{ b.kind }} — {{ b.publisher }}, {{ b.year }}">
-        <img loading="lazy" src="{{ b.cover|img(700) }}" alt="" onerror="ph(this)">
-        <figcaption><div class="t">{% if b.link %}<a href="{{ b.link }}">{{ b.title }}</a>{% else %}{{ b.title }}{% endif %}</div>
-          <div>{{ b.kind }}</div><div>{{ b.publisher }}, {{ b.year }}</div>
-          {% if b.prize %}<div class="prize">{{ b.prize }}</div>{% endif %}</figcaption>
-      </figure>
+      <a class="book" href="book-{{ b.slug }}.html">
+        <div class="cv">{% if b.cover %}<img loading="lazy" src="{{ b.cover|img(700) }}" alt="{{ b.title }}">{% else %}<div class="ph">{{ b.title }}</div>{% endif %}</div>
+        <div class="t">{{ b.title }}</div>
+        <div class="m">{{ b.kind }}</div><div class="m">{{ b.publisher }}, {{ b.year }}</div>
+        {% if b.prize %}<div class="prize">{{ b.prize }}</div>{% endif %}
+      </a>
     {% endfor %}
     </div>
   </div>

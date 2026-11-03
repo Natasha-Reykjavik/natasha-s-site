@@ -32,7 +32,7 @@ content:
     format: yaml
     fields:
       - name: books
-        label: "Книги (сверху вниз = слева направо на сайте)"
+        label: "Книги (порядок в списке = порядок на сайте)"
         type: object
         list: { collapsible: { collapsed: true, summary: "{fields.title}" } }
         fields:
@@ -42,6 +42,7 @@ content:
           - { name: year, label: "Год", type: number }
           - { name: prize, label: "Премия (если есть)", type: string }
           - { name: cover, label: "Обложка", type: image }
+          - { name: description, label: "Описание книги", type: text, description: "Показывается на странице книги справа от обложки. Новый абзац — пустая строка" }
           - { name: link, label: "Ссылка (необязательно)", type: string }
           - { name: show, label: "Показывать на сайте", type: boolean, default: true }
 

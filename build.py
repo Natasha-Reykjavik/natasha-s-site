@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import re
 """Build Natasha S. site: content/ + templates/ -> _site/
 
 Content is edited by Natasha in Pages CMS; design lives in templates/ and static/.
@@ -66,6 +67,19 @@ def when(d, precision):
 def main():
     site = load_yml(C("site.yml"))
     books = [b for b in load_yml(C("books.yml")).get("books", []) if b.get("show", True)]
+    import unicodedata
+    def slugify(t):
+        cyr = dict(zip("абвгдеёжзийклмнопрстуфхцчшщъыьэюя", ["a","b","v","g","d","e","e","zh","z","i","i","k","l","m","n","o","p","r","s","t","u","f","h","ts","ch","sh","sch","","y","","e","yu","ya"]))
+        t = "".join(cyr.get(c, cyr.get(c.lower(), c)) for c in t)
+        t = t.replace("ð", "d").replace("Ð", "d").replace("þ", "th").replace("Þ", "th").replace("æ", "ae")
+        t = unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode().lower()
+        return re.sub(r"[^a-z0-9]+", "-", t).strip("-") or "book"
+    seen = set()
+    for i, b in enumerate(books):
+        sl = slugify(b["title"]) if slugify(b["title"]) != "book" else "book-%d" % (i + 1)
+        while sl in seen: sl += "-2"
+        seen.add(sl); b["slug"] = sl
+        b["html"] = Markup(markdown.markdown(str(b.get("description") or "").strip())) if b.get("description") else ""
     published = []
     for g in load_yml(C("published.yml")).get("groups", []):
         items = [i for i in g.get("items", []) if i.get("show", True)]
@@ -131,6 +145,8 @@ def main():
     write("index.html", "index.html", side=None)
     write("literature.html", "literature.html", side="literature",
           about=load_md(C("literature-about.md")), books=books, published=published, news=news, news_years=news_years)
+    for b in books:
+        write("book-%s.html" % b["slug"], "book.html", side="literature", b=b)
     # Photography overview: one big cover per category, one under another (as sergeisarakhanov.com/projects).
     # Inside a gallery, two layouts for now (decision pending), switchable on draft builds:
     #   line    — photos in one sideways line (wheel / arrows / swipe)   photography-<slug>.html

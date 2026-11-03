@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}{{ b.title }} — {{ site.name }}{% endblock %}
+{% block content %}
+<section class="first"><div class="wrap">
+  <a class="back sans" href="literature.html#books">&larr; All books</a>
+  <div class="bookpage">
+    <div class="cv">{% if b.cover %}<img src="{{ b.cover|img(1400) }}" alt="{{ b.title }}">{% endif %}</div>
+    <div class="txt">
+      <h1>{{ b.title }}</h1>
+      <p class="meta">{{ b.kind }}<br>{{ b.publisher }}, {{ b.year }}</p>
+      {% if b.prize %}<p class="prize">{{ b.prize }}</p>{% endif %}
+      {% if b.html %}<div class="desc">{{ b.html }}</div>{% endif %}
+      {% if b.link %}<p><a class="sans more" href="{{ b.link }}">More about the book &rarr;</a></p>{% endif %}
+    </div>
+  </div>
+</div></section>
+{% endblock %}

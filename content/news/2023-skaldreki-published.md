@@ -2,7 +2,7 @@
 title: «Skáldreki // Writers adrift» published
 date: '2023-01-01'
 date_precision: year
-book: Skáldreki // Writers adrift
+book: Skáldreki
 links:
 - source: RÚV
   url: https://www.ruv.is/frettir/menning-og-daegurmal/2023-06-01-lyfta-upp-adur-oheyrdum-roddum
