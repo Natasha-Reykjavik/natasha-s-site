@@ -151,6 +151,24 @@ content:
           - { name: caption, label: "Подпись (необязательно)", type: string }
       - { name: show, label: "Показывать на сайте", type: boolean, default: true }
 
+  # ---------------- Сотрудничество ----------------
+  - name: cooperation
+    label: "Сотрудничество (Cooperation)"
+    type: file
+    path: content/cooperation.yml
+    format: yaml
+    fields:
+      - { name: heading, label: "Заголовок страницы", type: string, required: true }
+      - { name: intro, label: "Вступление", type: text }
+      - name: areas
+        label: "Направления"
+        type: object
+        list: { collapsible: { collapsed: true, summary: "{fields.title}" } }
+        fields:
+          - { name: title, label: "Название (напр. Literature)", type: string, required: true }
+          - { name: text, label: "Что предлагаешь", type: text }
+      - { name: contact_note, label: "Строка под e-mail", type: string, description: "Напр.: как с тобой связаться, за сколько дней писать" }
+
   # ---------------- Общее ----------------
   - name: site
     label: "Главная страница и контакты"

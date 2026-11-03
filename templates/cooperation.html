@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}{{ c.heading }} — {{ site.name }}{% endblock %}
+{% block content %}
+<section class="first"><div class="wrap coop">
+  <h1>{{ c.heading }}</h1>
+  {% if c.intro %}<p class="lede">{{ c.intro }}</p>{% endif %}
+  <div class="coopgrid">
+  {% for a in c.areas %}<div><h2 class="eyebrow">{{ a.title }}</h2><p>{{ a.text }}</p></div>{% endfor %}
+  </div>
+  <div class="coopcontact">
+    <a class="mail" href="mailto:{{ site.email }}">{{ site.email }}</a>
+    {% if c.contact_note %}<p class="meta">{{ c.contact_note }}</p>{% endif %}
+  </div>
+</div></section>
+{% endblock %}

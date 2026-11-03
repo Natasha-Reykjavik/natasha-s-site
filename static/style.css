@@ -221,3 +221,11 @@ h2.eyebrow{font-weight:400;margin:0}
 .book.soon .ph{border:none;background:#e9e6e1;color:var(--muted);font-family:-apple-system,BlinkMacSystemFont,Arial,sans-serif;font-size:12px;letter-spacing:.24em;text-transform:uppercase}
 @media(max-width:900px){.bookgrid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:720px){.bookgrid{grid-template-columns:repeat(2,1fr);gap:30px 18px}}
+/* cooperation page (3rd menu item, not on the entrance) */
+.coop h1{font-size:clamp(32px,5vw,56px);line-height:1.05;margin-bottom:22px}
+.coop .lede{font-size:clamp(18px,2vw,22px);max-width:46ch}
+.coopgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:40px 64px;margin:48px 0;max-width:900px}
+.coopgrid p{font-size:17px}
+.coopcontact{border-top:1px solid var(--line);padding-top:28px;max-width:900px}
+.coopcontact .mail{font-size:clamp(20px,2.4vw,28px);text-decoration:none;border-bottom:1px solid var(--line)}
+.coopcontact .meta{margin-top:12px}

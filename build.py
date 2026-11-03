@@ -150,6 +150,9 @@ def main():
     for b in books:
         if not b.get("coming_soon"):
             write("book-%s.html" % b["slug"], "book.html", side="literature", b=b)
+    coop_file = C("cooperation.yml")
+    if os.path.exists(coop_file):
+        write("cooperation.html", "cooperation.html", side="cooperation", c=load_yml(coop_file))
     # Photography overview: one big cover per category, one under another (as sergeisarakhanov.com/projects).
     # Inside a gallery, two layouts for now (decision pending), switchable on draft builds:
     #   line    — photos in one sideways line (wheel / arrows / swipe)   photography-<slug>.html
