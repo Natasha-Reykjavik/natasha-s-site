@@ -124,7 +124,7 @@ footer a{text-decoration:none;border-bottom:1px solid var(--line)}
 .bigcover .stack::after{transform:translate(7px,7px)}
 .bigcover img{position:relative;z-index:1;width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:#e9e6e1;transition:transform .35s}
 .bigcover:hover img{transform:translate(-4px,-4px)}
-.bigcover h2.gtitle.onphoto{position:absolute;inset:0;z-index:2;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;margin:0;font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(20px,3.2vw,38px);letter-spacing:-.01em;line-height:1.1;text-transform:none;color:#fff;text-shadow:0 1px 18px rgba(0,0,0,.25);transition:transform .35s;pointer-events:none}
+.bigcover h2.gtitle.onphoto{position:absolute;inset:0;z-index:2;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;margin:0;font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(28px,4.6vw,54px);letter-spacing:-.01em;line-height:1.1;text-transform:none;color:#fff;text-shadow:0 1px 18px rgba(0,0,0,.25);transition:transform .35s;pointer-events:none}
 .bigcover:hover h2.gtitle.onphoto{transform:translate(-4px,-4px)}
 .wrap.narrow{max-width:1000px}
 .column figure{margin:0 0 56px;cursor:zoom-in}
