@@ -24,6 +24,7 @@ content:
       - { name: role, label: "Подпись рядом с именем", type: string, description: "Напр.: Writer & Poet" }
       - { name: portrait, label: "Портрет", type: image }
       - { name: image_bw, label: "Портрет чёрно-белый", type: boolean, default: true, description: "Включено — портрет на странице «Литература» в ч/б. Выключи — в цвете" }
+      - { name: image_credit, label: "Автор фото", type: string, description: "Кто сделал фото — появится мелко под фото как «Photo: …». Можно оставить пустым" }
       - { name: body, label: "Текст био", type: text, required: true, description: "3-е лицо, 5–10 предложений. Курсив: *название*" }
 
   - name: books
@@ -130,6 +131,7 @@ content:
       - { name: role, label: "Подпись рядом с именем", type: string, description: "Напр.: Photographer" }
       - { name: image, label: "Фото рядом с текстом (необязательно)", type: image }
       - { name: image_bw, label: "Фото чёрно-белое", type: boolean, default: true, description: "Включено — фото рядом с текстом на странице «Фотография» в ч/б. Выключи — в цвете" }
+      - { name: image_credit, label: "Автор фото", type: string, description: "Кто сделал фото — появится мелко под фото как «Photo: …». Можно оставить пустым" }
       - { name: body, label: "Текст", type: text, required: true, description: "3–5 строк" }
 
   - name: galleries

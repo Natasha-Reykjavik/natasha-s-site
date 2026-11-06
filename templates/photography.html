@@ -4,7 +4,7 @@
 <section class="first"><div class="wrap">
   <div class="about {{ 'right' if about.image else 'solo' }}{% if about.get('image_bw', True) %} bw{% endif %}">
     <div class="body"><h1 class="named">{{ about.heading }}{% if about.role %} <span class="role {{ side }}">{{ about.role }}</span>{% endif %}</h1>{{ about.html }}</div>
-    {% if about.image %}<div class="img"><img src="{{ about.image|img(900) }}" alt=""></div>{% endif %}
+    {% if about.image %}<div class="img"><img src="{{ about.image|img(900) }}" alt="">{% if about.image_credit %}<p class="photocredit sans">Photo: {{ about.image_credit }}</p>{% endif %}</div>{% endif %}
   </div>
 </div>
 <div class="bigcovers">

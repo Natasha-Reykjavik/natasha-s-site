@@ -3,7 +3,7 @@
 {% block content %}
 <section class="first" id="about"><div class="wrap">
   <div class="about{% if about.get('image_bw', True) %} bw{% endif %}">
-    {% if about.portrait %}<div class="img"><img src="{{ about.portrait|img(900) }}" alt="{{ site.name }}"></div>{% endif %}
+    {% if about.portrait %}<div class="img"><img src="{{ about.portrait|img(900) }}" alt="{{ site.name }}">{% if about.image_credit %}<p class="photocredit sans">Photo: {{ about.image_credit }}</p>{% endif %}</div>{% endif %}
     <div class="body"><h1 class="named">{{ about.heading }}{% if about.role %} <span class="role {{ side }}">{{ about.role }}</span>{% endif %}</h1>{{ about.html }}
       <p class="meta">{{ site.location }} &middot; {{ site.languages }}</p></div>
   </div>

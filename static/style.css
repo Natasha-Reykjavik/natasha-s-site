@@ -45,6 +45,7 @@ header.top .wrap{display:flex;justify-content:space-between;align-items:baseline
 .about.solo{grid-template-columns:1fr}
 .about img{width:100%;display:block;background:#e9e6e1}
 .about.bw img{filter:grayscale(1)}
+.about .photocredit{margin:8px 0 0;font-size:11px;letter-spacing:.04em;color:var(--muted)}
 .about .body{max-width:62ch}
 .about h1{font-size:clamp(32px,5vw,56px);line-height:1.05;margin-bottom:22px}
 /* rails */
