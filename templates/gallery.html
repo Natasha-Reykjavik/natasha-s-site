@@ -1,24 +1,22 @@
 {% extends "base.html" %}
 {% block title %}{{ g.title }} — {{ site.name }}{% endblock %}
 {% block content %}
-{% include "variant.html" %}
 <section class="first"><div class="wrap">
   <a class="back sans" href="{{ back }}">&larr; All photography</a>
   <h1 style="font-size:clamp(32px,5vw,56px);margin:22px 0 10px">{{ g.title }}</h1>
-  {{ g.html }}
   {% if g.description %}<p class="meta" style="max-width:60ch">{{ g.description }}</p>{% endif %}
 </div>
-<div class="railbox" style="margin-top:26px">
-  <button class="arrow prev" aria-label="Previous">&larr;</button><button class="arrow next" aria-label="Next">&rarr;</button>
-  <div class="rail">
-  {% for p in g.photos %}
-    <figure onclick="lb(this)" data-big="{{ p.image|img(2000) }}" data-title="{{ p.caption or '' }}" data-meta="{{ g.title }}">
-      <img loading="lazy" src="{{ p.image|img(1200) }}" alt="{{ p.caption or '' }}">
-      {% if p.caption %}<figcaption>{{ p.caption }}</figcaption>{% endif %}
+<div class="mosaic">
+{% for r in g.rows %}
+  <div class="mrow m{{ r.layout }}">
+  {% for p in r.photos %}
+    <figure class="s{{ loop.index }}" onclick="lb(this)" data-big="{{ p.image|img(2000) }}" data-title="{{ p.caption or '' }}" data-meta="{{ g.title }}">
+      <img loading="lazy" src="{{ p.image|img(1600) }}" alt="{{ p.caption or '' }}">
     </figure>
   {% endfor %}
   </div>
+{% endfor %}
 </div>
-<p class="hint">Scroll or swipe sideways &middot; click a photo to enlarge</p>
+<p class="wrap" style="margin-top:40px"><a class="back sans" href="{{ back }}">&larr; All photography</a></p>
 </section>
 {% endblock %}

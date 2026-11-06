@@ -139,39 +139,39 @@ content:
     type: collection
     path: content/galleries
     format: yaml-frontmatter
-    operations: { create: false, delete: false, rename: false }   # categories fixed; ask Marina to add one
+    filename: "{primary}.md"
     view: { fields: [title, order] }
     fields:
-      - { name: title, label: "Название категории", type: string, required: true }
-      - { name: order, label: "Порядок на странице (1 = первая)", type: number }
+      - { name: title, label: "Название категории", type: string, required: true, description: "Напр.: Events. Из названия получается адрес страницы — менять потом не нужно" }
+      - { name: order, label: "Порядок на странице «Photography» (1 = первая)", type: number }
       - { name: description, label: "Подзаголовок (необязательно)", type: text }
-      - { name: cover, label: "Заглавная фотография категории", type: image, description: "Большое фото категории на странице «Photography». Если пусто — берётся первая из списка ниже" }
-      - name: photos
-        label: "Фотографии галереи (сверху вниз = слева направо)"
+      - { name: cover, label: "Заглавная фотография категории", type: image, description: "Большое фото категории на странице «Photography». Если пусто — берётся первое фото галереи" }
+      - name: rows
+        label: "Ряды галереи (сверху вниз)"
         type: object
-        list: { collapsible: { collapsed: true, summary: "{fields.caption}" } }
+        list: { collapsible: { collapsed: true, summary: "{fields.layout}" } }
+        description: "Галерея собирается из рядов. Добавь ряд → выбери тип → добавь фото в указанном порядке. Узор как на образце: А, Б, В, Г, потом снова А, Б, В, Г…"
         fields:
-          - { name: image, label: "Фото", type: image, required: true, description: "Загрузи файл с компьютера или выбери уже загруженный. До загрузки уменьши до ~2500 px" }
-          - { name: caption, label: "Подпись (необязательно)", type: string }
+          - name: layout
+            label: "Тип ряда"
+            type: select
+            required: true
+            default: a
+            options:
+              values:
+                - { name: a, label: "А — 2 фото: ① вертикальное (узкое, слева) ② горизонтальное (широкое)" }
+                - { name: b, label: "Б — 5 фото: ①② слева друг над другом · ③ высокое в центре · ④⑤ справа друг над другом" }
+                - { name: c, label: "В — 2 фото: ① горизонтальное (широкое, слева) ② вертикальное (узкое)" }
+                - { name: d, label: "Г — 4 фото: ① высокое слева · ②③ в центре друг над другом · ④ высокое справа" }
+          - name: photos
+            label: "Фото ряда (по порядку ①②③…)"
+            type: object
+            list: { collapsible: { collapsed: true, summary: "{fields.caption}" } }
+            description: "Сколько фото в ряду: А — 2, Б — 5, В — 2, Г — 4. Лишние не покажутся. Номер в списке = номер места в схеме"
+            fields:
+              - { name: image, label: "Фото", type: image, required: true, description: "~2500 px, JPG. Для «высоких» и «вертикальных» мест — вертикальное фото" }
+              - { name: caption, label: "Подпись (видна при увеличении)", type: string }
       - { name: show, label: "Показывать на сайте", type: boolean, default: true }
-
-  # ---------------- Сотрудничество ----------------
-  - name: cooperation
-    label: "Сотрудничество (Cooperation)"
-    type: file
-    path: content/cooperation.yml
-    format: yaml
-    fields:
-      - { name: heading, label: "Заголовок страницы", type: string, required: true }
-      - { name: intro, label: "Вступление", type: text }
-      - name: areas
-        label: "Направления"
-        type: object
-        list: { collapsible: { collapsed: true, summary: "{fields.title}" } }
-        fields:
-          - { name: title, label: "Название (напр. Literature)", type: string, required: true }
-          - { name: text, label: "Что предлагаешь", type: text }
-      - { name: contact_note, label: "Строка под e-mail", type: string, description: "Напр.: как с тобой связаться, за сколько дней писать" }
 
   # ---------------- Общее ----------------
   - name: site

@@ -122,7 +122,21 @@ def main():
                     n["picture"], n["is_cover"] = "", False
                 seen.add(n["book"])
     galleries = [load_md(p) for p in glob.glob(C("galleries", "*.md"))]
-    galleries = [g for g in galleries if g.get("show", True) and g.get("photos")]
+    # Mosaic gallery: rows of 4 fixed types (a/b/c/d). Old flat "photos" lists are poured into the a-b-c-d cycle.
+    SLOTS = {"a": 2, "b": 5, "c": 2, "d": 4}
+    for g in galleries:
+        rows = [r for r in (g.get("rows") or []) if r.get("photos")]
+        if not rows and g.get("photos"):
+            ps, cyc, i = list(g["photos"]), "abcd", 0
+            while ps:
+                lay = cyc[i % 4]; rows.append({"layout": lay, "photos": ps[:SLOTS[lay]]}); ps = ps[SLOTS[lay]:]; i += 1
+        for r in rows:
+            r["layout"] = (r.get("layout") or "a")[0].lower()
+            r["photos"] = [p for p in r["photos"] if p.get("image")][:SLOTS.get(r["layout"], 5)]
+        g["rows"] = [r for r in rows if r["photos"]]
+        g["count"] = sum(len(r["photos"]) for r in g["rows"])
+        g["photos"] = [p for r in g["rows"] for p in r["photos"]]
+    galleries = [g for g in galleries if g.get("show", True) and g["rows"]]
     for g in galleries:
         g["cover"] = g.get("cover") or g["photos"][0]["image"]
     galleries.sort(key=lambda g: (g.get("order", 99), g["title"]))
@@ -160,12 +174,9 @@ def main():
     photo_about = load_md(C("photography-about.md"))
     write("photography.html", "photography.html", side="photography",
           about=photo_about, galleries=galleries, prefix="photography-")
-    G = {"line": ("photography-", "gallery.html"), "stacked": ("photography-stacked-", "gallery-stacked.html")}
-    for lay, (prefix, tpl) in G.items():
-        for g in galleries:
-            links = [(lab.capitalize(), "%s%s.html" % (G[lab][0], g["slug"]), lab == lay) for lab in G]
-            write("%s%s.html" % (prefix, g["slug"]), tpl, side="photography", g=g,
-                  back="photography.html", variant_links=links)
+    # One page per category: mosaic of rows (types a/b/c/d), see templates/gallery.html
+    for g in galleries:
+        write("photography-%s.html" % g["slug"], "gallery.html", side="photography", g=g, back="photography.html")
     open(os.path.join(OUT, ".nojekyll"), "w").close()
 
 if __name__ == "__main__":
