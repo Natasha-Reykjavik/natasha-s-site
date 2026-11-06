@@ -46,5 +46,3 @@ books:
     year: 2021
     cover: /media/books/odnoi-tsepyu.jpg
     show: true
-  - title: Coming soon
-    show: true
