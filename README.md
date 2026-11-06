@@ -31,5 +31,5 @@ News: 21 items from Natasha's «Новостная полоса»; several sourc
 Press photos (Vísir, RÚV, Grapevine) need permission: until `image_permission: true` they appear only in
 `--local` builds, and files in `media/pending/` are git-ignored — the repo is public.
 
-Demo content: gallery photos are SmugMug stand-ins, not Natasha's selection; book covers come from her Drive;
+Demo content: gallery photos are stand-ins (hot-linked), not Natasha's selection, not Natasha's selection; book covers come from her Drive;
 the photography bio is a placeholder.

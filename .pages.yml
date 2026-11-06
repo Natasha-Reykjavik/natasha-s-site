@@ -45,7 +45,7 @@ content:
           - { name: prize, label: "Премия (если есть)", type: string }
           - { name: cover, label: "Обложка", type: image }
           - { name: description, label: "Описание книги", type: text, description: "Показывается на странице книги справа от обложки. Новый абзац — пустая строка" }
-          - { name: link, label: "Ссылка (необязательно)", type: string }
+          - { name: link, label: "Ссылка (необязательно)", type: string, description: "Адрес страницы с публикацией (https://…). Строка станет кликабельной и откроется в новой вкладке. Одна ссылка на строку — если изданий несколько, сделай отдельные строки" }
           - { name: coming_soon, label: "Скоро (Coming soon)", type: boolean, default: false, description: "Карточка «Coming soon» без отдельной страницы. Можно оставить пустой или добавить название/обложку будущей книги" }
           - { name: show, label: "Показывать на сайте", type: boolean, default: true }
 
@@ -184,7 +184,6 @@ content:
       - { name: email, label: "E-mail", type: string, required: true }
       - { name: location, label: "Город", type: string }
       - { name: languages, label: "Языки", type: string }
-      - { name: photo_archive, label: "Ссылка на архив SmugMug", type: string }
       - { name: entrance_literature_image, label: "Главная: фото слева («Литература»)", type: image, description: "Большая картинка левой половины первой страницы. Нажми на картинку → загрузи новую → Save. Лучше вертикальная, от 2000 px" }
       - { name: literature_bw, label: "Главная слева: чёрно-белое", type: boolean, default: true, description: "Левое фото («Литература»): включено — ч/б, выключено — цвет" }
       - { name: literature_blur, label: "Главная слева: размыть", type: boolean, default: false, description: "Левое фото («Литература»): включено — мягко размыто, выключено — чётко" }
