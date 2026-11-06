@@ -3,11 +3,11 @@ title: Events
 order: 2
 description: ''
 rows:
-- layout: А · 2 фото
+- layout: A · 2 фото
   photos:
   - image: https://photos.smugmug.com/Olga-Tokarczuk/i-Dnhv8x4/0/MCznbXnq9zkvr38t78bZq2rw8jXM85wVN9ZpM8JSW/L/DSCF3307-L.jpg
   - image: https://photos.smugmug.com/Upplestur-27-mars/i-dzBVNxR/0/MwZPkPRLHNThvhDjnDJsjcjcghhRwCZXx92RGDZbp/X2/DSCF0159-2-X2.jpg
-- layout: Б · 5 фото
+- layout: B · 5 фото
   photos:
   - image: https://photos.smugmug.com/Fischersund-upplestur/i-NJJhxvh/0/KWhdhpR7sgfhMF6L3zHR69SDsF2jzMC2Dhb9hgsDS/XL/DSCF5805-XL.jpg
   - image: https://photos.smugmug.com/Lj%C3%B3%C3%B0sk%C3%B3gur/i-S25NQwP/0/NhKL94fskDBr7vvJTk5qDrKDHZHpgvGNShbtCGDwb/L/DSCF9243-L.jpg
