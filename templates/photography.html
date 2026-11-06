@@ -10,8 +10,8 @@
 <div class="bigcovers">
 {% for g in galleries %}
   <a class="bigcover" href="{{ prefix }}{{ g.slug }}.html">
-    <div class="head sans"><h2 class="gtitle">{{ g.title }}</h2>{% if g.description %}<p>{{ g.description }}</p>{% endif %}</div>
-    <div class="stack"><img loading="lazy" src="{{ g.cover|img(2000) }}" alt=""></div>
+    {% if g.description %}<div class="head sans"><p>{{ g.description }}</p></div>{% endif %}
+    <div class="stack"><img loading="lazy" src="{{ g.cover|img(2000) }}" alt=""><h2 class="gtitle onphoto">{{ g.title }}</h2></div>
   </a>
 {% endfor %}
 </div>
