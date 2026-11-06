@@ -2,7 +2,6 @@
 title: Fine art
 order: 4
 description: ''
-cover: https://photos.smugmug.com/K%C3%A6ri-f%C3%A1viti/i-VwBpmGL/0/MFWq6fGC9Fkd3NwGhKRMZvqpXt3XNv8VwmR5LBnxx/XL/DSCF8803-2-XL.jpg
 rows:
 - layout: a
   photos:

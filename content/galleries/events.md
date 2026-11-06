@@ -2,7 +2,6 @@
 title: Events
 order: 2
 description: ''
-cover: https://photos.smugmug.com/Olga-Tokarczuk/i-Dnhv8x4/0/MCznbXnq9zkvr38t78bZq2rw8jXM85wVN9ZpM8JSW/L/DSCF3307-L.jpg
 rows:
 - layout: a
   photos:

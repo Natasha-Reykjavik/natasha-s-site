@@ -2,7 +2,6 @@
 title: Documentary
 order: 3
 description: ''
-cover: https://photos.smugmug.com/%D0%94%D0%BE%D0%BC%D0%B0/i-3DvgwRV/0/KmtNZwfpNNcV2r82j3Rk4cP6JK4Q8BxG9mBZS4GZH/XL/DSCF9285-XL.jpg
 rows:
 - layout: a
   photos:

@@ -138,7 +138,7 @@ def main():
         g["photos"] = [p for r in g["rows"] for p in r["photos"]]
     galleries = [g for g in galleries if g.get("show", True) and g["rows"]]
     for g in galleries:
-        g["cover"] = g.get("cover") or g["photos"][0]["image"]
+        g["cover"] = g["photos"][0]["image"]   # main photo = row 1, photo 1 (wide), also the cover on the Photography page
     galleries.sort(key=lambda g: (g.get("order", 99), g["title"]))
 
     os.makedirs(OUT, exist_ok=True)

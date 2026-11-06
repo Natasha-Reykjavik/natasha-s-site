@@ -2,7 +2,6 @@
 title: Family at home
 order: 1
 description: ''
-cover: https://photos.smugmug.com/Fr%C3%AD%C3%B0a-T%C3%B3mas-Eyborg/i-x3jqPpj/0/KsQg6JRPxbB7XpdxL8n7jQ8fPhh5bJhFhCkpwvd72/XL/DSCF0589-3-XL.jpg
 rows:
 - layout: a
   photos:
