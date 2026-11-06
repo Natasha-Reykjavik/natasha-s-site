@@ -149,6 +149,7 @@ def main():
         shutil.copytree(os.path.join(ROOT, "extras"), OUT, dirs_exist_ok=True)
 
     env = Environment(loader=FileSystemLoader(os.path.join(ROOT, "templates")), autoescape=select_autoescape(["html"]))
+    env.globals["year"] = datetime.date.today().year
     env.filters["img"] = img
     import hashlib  # cache-busting: browsers load the new CSS as soon as it changes
     css_v = hashlib.md5(open(os.path.join(ROOT, "static", "style.css"), "rb").read()).hexdigest()[:8]
