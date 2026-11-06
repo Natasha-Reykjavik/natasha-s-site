@@ -131,7 +131,8 @@ def main():
             while ps:
                 lay = cyc[i % 4]; rows.append({"layout": lay, "photos": ps[:SLOTS[lay]]}); ps = ps[SLOTS[lay]:]; i += 1
         for r in rows:
-            r["layout"] = (r.get("layout") or "a")[0].lower()
+            # value is e.g. "А · 2 фото" (Cyrillic letter shown in Pages CMS) or old "a"; map to a/b/c/d
+            r["layout"] = {"а": "a", "б": "b", "в": "c", "г": "d"}.get((str(r.get("layout") or "a").strip()[:1]).lower(), (str(r.get("layout") or "a").strip()[:1]).lower())
             r["photos"] = [p for p in r["photos"] if p.get("image")][:SLOTS.get(r["layout"], 5)]
         g["rows"] = [r for r in rows if r["photos"]]
         g["count"] = sum(len(r["photos"]) for r in g["rows"])
