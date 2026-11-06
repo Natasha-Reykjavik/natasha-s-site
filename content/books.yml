@@ -1,6 +1,13 @@
 books:
   - title: Mara kommer på besök
+    kind: Poetry
+    publisher: Rámus förlag
+    year: 2026
     cover: /media/mara-kommer.jpg
+    description: |-
+      Mara kemur í heimsókn in Swedish
+      Author's translation
+    coming_soon: false
     show: true
   - title: Mara kemur í heimsókn
     kind: Poetry
@@ -8,18 +15,21 @@ books:
     year: 2025
     prize: Maístjarnan 2026
     cover: /media/ns-cover-mara-1.jpg
+    coming_soon: false
     show: true
   - title: Skáldreki
     kind: Essays — editor, co-author (Icelandic edition)
     publisher: Una útgáfuhús
     year: 2023
     cover: /media/books/skaldreki-is.jpg
+    coming_soon: false
     show: true
   - title: Writers adrift
     kind: Essays — editor, co-author (English edition)
     publisher: Una útgáfuhús
     year: 2023
     cover: /media/books/writers-adrift-en.jpg
+    coming_soon: false
     show: true
   - title: Máltaka á stríðstímum
     kind: Poetry
@@ -27,22 +37,26 @@ books:
     year: 2022
     prize: Tómas Guðmundsson Prize 2022
     cover: /media/books/maltaka.jpg
+    coming_soon: false
     show: true
   - title: Polífonía af erlendum uppruna
     kind: Poetry anthology — editor, co-author
     publisher: Una útgáfuhús
     year: 2021
     cover: /media/books/polifonia.jpg
+    coming_soon: false
     show: true
   - title: Магма / Kvika
     kind: Translation of Þóra Hjörleifsdóttir
     publisher: Дримбук
     year: 2022
     cover: /media/books/magma.jpg
+    coming_soon: false
     show: true
   - title: Одной цепью
     kind: Short story — «На десерт мороженое»
     publisher: Есть смысл
     year: 2021
     cover: /media/books/odnoi-tsepyu.jpg
+    coming_soon: false
     show: true
