@@ -166,11 +166,10 @@ content:
           - name: photos
             label: "Фото ряда (по порядку ①②③…)"
             type: object
-            list: { collapsible: { collapsed: true, summary: "{fields.caption}" } }
+            list: { collapsible: { collapsed: true } }
             description: "Сколько фото в ряду: А — 2, Б — 5, В — 2, Г — 4. Лишние не покажутся. Номер в списке = номер места в схеме"
             fields:
               - { name: image, label: "Фото", type: image, required: true, description: "~2500 px, JPG. Для «высоких» и «вертикальных» мест — вертикальное фото" }
-              - { name: caption, label: "Подпись (видна при увеличении)", type: string }
       - { name: show, label: "Показывать на сайте", type: boolean, default: true }
 
   # ---------------- Общее ----------------

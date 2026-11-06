@@ -10,8 +10,8 @@
 {% for r in g.rows %}
   <div class="mrow m{{ r.layout }}">
   {% for p in r.photos %}
-    <figure class="s{{ loop.index }}" onclick="lb(this)" data-big="{{ p.image|img(2000) }}" data-title="{{ p.caption or '' }}" data-meta="{{ g.title }}">
-      <img loading="lazy" src="{{ p.image|img(1600) }}" alt="{{ p.caption or '' }}">
+    <figure class="s{{ loop.index }}" onclick="lb(this)" data-big="{{ p.image|img(2000) }}" data-title="" data-meta="">
+      <img loading="lazy" src="{{ p.image|img(1600) }}" alt="{{ g.title }}">
     </figure>
   {% endfor %}
   </div>
