@@ -7,6 +7,6 @@ rows:
       - image: /media/forest-cristall-3.jpg
   - layout: A · 2 фото
     photos:
-      - image: /media/11.jpg
+      - {}
 show: true
 ---
