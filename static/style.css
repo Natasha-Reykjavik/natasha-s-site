@@ -21,6 +21,7 @@ header.top .wrap{display:flex;justify-content:space-between;align-items:baseline
 .switch{display:flex;flex-shrink:0;white-space:nowrap}
 .switch a{margin-left:18px;text-decoration:none;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 .switch a.on{color:var(--ink);border-bottom:1px solid var(--ink)}
+.switch a.soc{color:var(--ink);display:inline-flex;align-self:center;margin-left:14px;opacity:.75;transition:opacity .2s}.switch a.soc:hover{opacity:1}.switch a.soc svg{display:block}
 /* entrance */
 .gate{position:fixed;inset:0;display:flex;background:var(--paper)}
 .gate a.half{flex:1;position:relative;display:flex;align-items:center;justify-content:center;text-decoration:none;overflow:hidden;transition:flex .55s cubic-bezier(.4,0,.2,1)}

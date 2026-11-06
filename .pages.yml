@@ -181,6 +181,8 @@ content:
       - { name: name, label: "Имя на сайте", type: string, required: true }
       - { name: email, label: "E-mail", type: string, required: true }
       - { name: location, label: "Город", type: string }
+      - { name: facebook, label: "Facebook (ссылка)", type: string, description: "Значок в правом верхнем углу сайта. Пусто — значка нет" }
+      - { name: instagram, label: "Instagram (ссылка)", type: string, description: "Значок в правом верхнем углу сайта. Пусто — значка нет" }
       - { name: languages, label: "Языки", type: string }
       - { name: entrance_literature_image, label: "Главная: фото слева («Литература»)", type: image, description: "Большая картинка левой половины первой страницы. Нажми на картинку → загрузи новую → Save. Лучше вертикальная, от 2000 px" }
       - { name: literature_bw, label: "Главная слева: чёрно-белое", type: boolean, default: true, description: "Левое фото («Литература»): включено — ч/б, выключено — цвет" }
