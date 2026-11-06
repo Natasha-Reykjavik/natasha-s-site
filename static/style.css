@@ -18,10 +18,10 @@ section.first{border-top:none;padding-top:64px}
 header.top{position:sticky;top:0;background:rgba(246,245,242,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:40}
 header.top .wrap{display:flex;justify-content:space-between;align-items:baseline;padding-top:16px;padding-bottom:16px;gap:16px}
 .name{font-size:16px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none}
-.switch{display:flex;flex-shrink:0;white-space:nowrap}
+.switch{display:flex;flex-shrink:0;white-space:nowrap;align-items:center}
 .switch a{margin-left:18px;text-decoration:none;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
 .switch a.on{color:var(--ink);border-bottom:1px solid var(--ink)}
-.switch a.soc{color:var(--ink);display:inline-flex;align-self:center;margin-left:14px;opacity:.75;transition:opacity .2s}.switch a.soc:hover{opacity:1}.switch a.soc svg{display:block}
+.switch a.soc{color:var(--ink);display:inline-flex;align-self:center;margin-left:14px;opacity:.75;transition:opacity .2s}.switch a.soc:hover{opacity:1}.switch a.soc svg{display:block}.switch a.soc{margin-top:-8px;margin-bottom:-8px}.switch a.soc:last-of-type{margin-right:-28px}@media(max-width:720px){.switch{gap:10px}.switch a.soc svg{width:22px;height:22px}.switch a.soc{margin-left:0}.switch a.soc:last-of-type{margin-right:0}}
 /* entrance */
 .gate{position:fixed;inset:0;display:flex;background:var(--paper)}
 .gate a.half{flex:1;position:relative;display:flex;align-items:center;justify-content:center;text-decoration:none;overflow:hidden;transition:flex .55s cubic-bezier(.4,0,.2,1)}
