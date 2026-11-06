@@ -3,10 +3,8 @@ books:
     kind: Poetry
     publisher: Rámus förlag
     year: 2026
+    prize: Mara kemur í heimsókn in Swedish Author's translation
     cover: /media/mara-kommer.jpg
-    description: |-
-      Mara kemur í heimsókn in Swedish
-      Author's translation
     coming_soon: false
     show: true
   - title: Mara kemur í heimsókn
