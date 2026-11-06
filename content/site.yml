@@ -5,5 +5,8 @@ languages: Icelandic, Russian, English, Swedish
 photo_archive: https://natashas.smugmug.com/
 entrance_literature_image: /media/natasha-portrait.jpg
 entrance_photography_image: /media/cover1.jpg
+entrance_bw: true
+entrance_blur: false
+portrait_bw: false
 entrance_literature_subtitle: Poetry · essays · translation
 entrance_photography_subtitle: Family · events · documentary · fine art
