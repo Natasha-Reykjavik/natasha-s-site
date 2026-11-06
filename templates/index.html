@@ -6,11 +6,11 @@
     <div class="l"><span class="nm">{{ site.name }}</span><span class="a">Ljóð</span></div>
     <div class="r"><span class="b">myndir</span></div>
   </div>
-  <a class="half lit" href="literature.html">
+  <a class="half lit{% if site.get('literature_bw', site.get('entrance_bw', True)) %} bw{% endif %}{% if site.get('literature_blur', site.get('entrance_blur')) %} blur{% endif %}" href="literature.html">
     {% if site.entrance_literature_image %}<img src="{{ site.entrance_literature_image|img(1400) }}" alt="">{% endif %}
     <div class="label"><h2>Literature</h2><div class="sub sans">{{ site.entrance_literature_subtitle }}</div></div>
   </a>
-  <a class="half pho" href="photography.html">
+  <a class="half pho{% if site.get('photography_bw', site.get('entrance_bw', True)) %} bw{% endif %}{% if site.get('photography_blur', site.get('entrance_blur')) %} blur{% endif %}" href="photography.html">
     {% if site.entrance_photography_image %}<img src="{{ site.entrance_photography_image|img(1400) }}" alt="">{% endif %}
     <div class="label"><h2>Photography</h2><div class="sub sans">{{ site.entrance_photography_subtitle }}</div></div>
   </a>

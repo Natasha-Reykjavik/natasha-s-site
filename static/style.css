@@ -26,9 +26,9 @@ header.top .wrap{display:flex;justify-content:space-between;align-items:baseline
 .gate a.half{flex:1;position:relative;display:flex;align-items:center;justify-content:center;text-decoration:none;overflow:hidden;transition:flex .55s cubic-bezier(.4,0,.2,1)}
 .gate a.half:hover{flex:1.25}
 .gate .half img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .55s}
-.bw-home .gate .half img{filter:grayscale(1)}
-.blur-home .gate .half img{filter:blur(6px);transform:scale(1.06)}
-.bw-home.blur-home .gate .half img{filter:grayscale(1) blur(6px)}
+.gate .half.bw img{filter:grayscale(1)}
+.gate .half.blur img{filter:blur(6px);transform:scale(1.06)}
+.gate .half.bw.blur img{filter:grayscale(1) blur(6px)}
 .gate .half.lit{background:var(--paper);color:var(--ink)}
 .gate .half.lit img{opacity:.16}
 .gate .half.lit:hover img{opacity:.28}
@@ -44,7 +44,7 @@ header.top .wrap{display:flex;justify-content:space-between;align-items:baseline
 .about.right{grid-template-columns:1fr minmax(220px,320px)}
 .about.solo{grid-template-columns:1fr}
 .about img{width:100%;display:block;background:#e9e6e1}
-.bw-portrait .about img{filter:grayscale(1)}
+.about.bw img{filter:grayscale(1)}
 .about .body{max-width:62ch}
 .about h1{font-size:clamp(32px,5vw,56px);line-height:1.05;margin-bottom:22px}
 /* rails */
