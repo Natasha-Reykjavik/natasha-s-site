@@ -22,7 +22,7 @@ content:
     fields:
       - { name: heading, label: "Имя (заголовок)", type: string, required: true }
       - { name: role, label: "Подпись рядом с именем", type: string, description: "Напр.: Writer & Poet" }
-      - { name: portrait, label: "Портрет", type: image, description: "Чёрно-белый на сайте делается автоматически" }
+      - { name: portrait, label: "Портрет", type: image, description: "Ч/б или цвет — переключатель в «Главная страница и контакты»" }
       - { name: body, label: "Текст био", type: text, required: true, description: "3-е лицо, 5–10 предложений. Курсив: *название*" }
 
   - name: books
@@ -183,5 +183,8 @@ content:
       - { name: photo_archive, label: "Ссылка на архив SmugMug", type: string }
       - { name: entrance_literature_image, label: "Главная: фото слева («Литература»)", type: image, description: "Большая картинка левой половины первой страницы. Нажми на картинку → загрузи новую → Save. Лучше вертикальная, от 2000 px" }
       - { name: entrance_photography_image, label: "Главная: фото справа («Фотография»)", type: image, description: "Большая картинка правой половины первой страницы. Нажми на картинку → загрузи новую → Save. Лучше вертикальная, от 2000 px" }
+      - { name: entrance_bw, label: "Главная: фото чёрно-белые", type: boolean, default: true, description: "Включено — обе большие картинки на главной в ч/б. Выключи — будут в цвете" }
+      - { name: entrance_blur, label: "Главная: размыть фото", type: boolean, default: false, description: "Включено — обе большие картинки на главной мягко размыты (фон под надписями). Выключи — чёткие" }
+      - { name: portrait_bw, label: "Портреты чёрно-белые", type: boolean, default: true, description: "Портрет на странице «Литература» и фото на странице «Фотография». Выключи — будут в цвете" }
       - { name: entrance_literature_subtitle, label: "Главная: подпись под «Литература»", type: string }
       - { name: entrance_photography_subtitle, label: "Главная: подпись под «Фотография»", type: string }

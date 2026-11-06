@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{% block title %}{{ site.name }}{% endblock %}</title>
 <link rel="stylesheet" href="{{ root }}static/style.css?v={{ css_v }}">
-</head><body>
+</head><body class="{% if site.get('entrance_bw', True) %}bw-home{% endif %} {% if site.get('portrait_bw', True) %}bw-portrait{% endif %} {% if site.get('entrance_blur') %}blur-home{% endif %}">
 {% block body %}
 <header class="top"><div class="wrap">
   <a class="brand" href="{{ root }}index.html">{% include "logo.html" %}</a>
