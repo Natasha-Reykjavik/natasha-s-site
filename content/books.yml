@@ -1,4 +1,7 @@
 books:
+  - title: Mara kommer på besök
+    cover: /media/mara-kommer.jpg
+    show: true
   - title: Mara kemur í heimsókn
     kind: Poetry
     publisher: Benedikt
@@ -44,7 +47,4 @@ books:
     cover: /media/books/odnoi-tsepyu.jpg
     show: true
   - title: Coming soon
-    show: true
-  - title: Mara kommer på besök
-    cover: /media/mara-kommer.jpg
     show: true
