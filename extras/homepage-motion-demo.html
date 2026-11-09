@@ -13,6 +13,10 @@
 .gate .half.pho img{animation-delay:-6s}
 /* phones/computers set to "reduce motion" get the still page */
 @media(prefers-reduced-motion:reduce){.gate .half img{animation:none}.gate a.half{transition:none}}
+/* no widening: the halves keep their size on mouse-over and on tap */
+.gate a.half:hover,.gate a.half:active{flex:1}
+.gate:has(.lit:hover) .gatelogo,.gate:has(.pho:hover) .gatelogo{grid-template-columns:1fr 1fr}
+@media(max-width:720px){.gate:has(.lit:hover) .gatelogo,.gate:has(.pho:hover) .gatelogo{grid-template-columns:auto auto}}
 .demotag{position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(20,17,15,.86);color:#f6f5f2;font:11px/1.4 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;letter-spacing:.08em;text-align:center;padding:7px 12px}
 .demotag a{color:inherit}
 </style>
