@@ -11,11 +11,6 @@
 .gate .half img{animation:breathe 22s ease-in-out infinite alternate;will-change:transform}
 .gate .half.blur img{animation-name:breathe-blur}
 .gate .half.pho img{animation-delay:-11s}
-/* 3 · touch: the tapped half grows (taller on a phone, wider on a tablet), then its page opens */
-.gate a.half.tapped{flex:1.6}
-.gate .half.lit.tapped img{opacity:.28}
-.gate .half.pho.tapped img{opacity:.72}
-@media(max-width:720px){.gate a.half.tapped{flex:1.6}}
 /* phones/computers set to "reduce motion" get the still page */
 @media(prefers-reduced-motion:reduce){.gate .half img{animation:none}.gate a.half{transition:none}}
 .demotag{position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(20,17,15,.86);color:#f6f5f2;font:11px/1.4 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;letter-spacing:.08em;text-align:center;padding:7px 12px}
@@ -37,23 +32,5 @@
     <div class="label"><h2>Photography</h2><div class="sub sans">Family · events · documentary · fine art</div></div>
   </a>
 </div>
-<div class="demotag">DEMO · slow zoom + tap-to-grow · <a href="index.html">current homepage</a></div>
-<script>
-(function(){
-  var touch = window.matchMedia('(hover: none)').matches;
-  var still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if(!touch || still) return;               // computers keep the mouse-over effect as it is
-  document.querySelectorAll('.gate a.half').forEach(function(a){
-    a.addEventListener('click', function(e){
-      if(a.classList.contains('tapped')) return;
-      e.preventDefault();
-      a.classList.add('tapped');
-      setTimeout(function(){ location.href = a.href; }, 420);
-    });
-  });
-  window.addEventListener('pageshow', function(){   // coming back with the Back button: reset
-    document.querySelectorAll('.gate a.half.tapped').forEach(function(a){ a.classList.remove('tapped'); });
-  });
-})();
-</script>
+<div class="demotag">DEMO · slow zoom · <a href="index.html">current homepage</a></div>
 </body></html>
