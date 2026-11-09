@@ -6,11 +6,11 @@
 <link rel="stylesheet" href="static/style.css">
 <style>
 /* 1 · slow "breathing" zoom — the two photos run out of step */
-@keyframes breathe{from{transform:scale(1)}to{transform:scale(1.09)}}
-@keyframes breathe-blur{from{transform:scale(1.06)}to{transform:scale(1.15)}}
-.gate .half img{animation:breathe 22s ease-in-out infinite alternate;will-change:transform}
+@keyframes breathe{from{transform:scale(1)}to{transform:scale(1.18)}}
+@keyframes breathe-blur{from{transform:scale(1.06)}to{transform:scale(1.24)}}
+.gate .half img{animation:breathe 12s ease-in-out infinite alternate;will-change:transform}
 .gate .half.blur img{animation-name:breathe-blur}
-.gate .half.pho img{animation-delay:-11s}
+.gate .half.pho img{animation-delay:-6s}
 /* phones/computers set to "reduce motion" get the still page */
 @media(prefers-reduced-motion:reduce){.gate .half img{animation:none}.gate a.half{transition:none}}
 .demotag{position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(20,17,15,.86);color:#f6f5f2;font:11px/1.4 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;letter-spacing:.08em;text-align:center;padding:7px 12px}
