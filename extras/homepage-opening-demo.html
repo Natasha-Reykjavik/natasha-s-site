@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Natasha S. — homepage opening (demo)</title>
+<link rel="stylesheet" href="static/style.css">
+<style>
+/* 2 · short opening: words fade and rise into place once, then everything is still */
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+.gate a.half{animation:fadein 1.4s ease-out both}
+.gate .label h2{animation:rise .9s cubic-bezier(.2,.7,.2,1) .25s both}
+.gate .label .sub{animation:rise .9s cubic-bezier(.2,.7,.2,1) .6s both}
+.gate .half.pho .label h2{animation-delay:.4s}.gate .half.pho .label .sub{animation-delay:.75s}
+.gatelogo{animation:fadein 1.2s ease-out .1s both}
+/* phones/computers set to "reduce motion" get the still page */
+@media(prefers-reduced-motion:reduce){.gate a.half,.gate .label h2,.gate .label .sub,.gatelogo{animation:none}}
+.demotag{position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(20,17,15,.86);color:#f6f5f2;font:11px/1.4 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;letter-spacing:.08em;text-align:center;padding:7px 12px}
+.demotag a{color:inherit}
+</style>
+</head><body>
+<div class="gate">
+  <h1 class="sr-only">Natasha S. — ljóð, myndir</h1>
+  <div class="gatelogo" aria-hidden="true">
+    <div class="l"><span class="nm">Natasha S.</span><span class="a">Ljóð</span></div>
+    <div class="r"><span class="b">myndir</span></div>
+  </div>
+  <a class="half lit" href="literature.html">
+    <img src="media/w1400/natasha-portrait.jpg" alt="">
+    <div class="label"><h2>Literature</h2><div class="sub sans">Poetry · essays · translation</div></div>
+  </a>
+  <a class="half pho" href="photography.html">
+    <img src="media/w1400/cover1.jpg" alt="">
+    <div class="label"><h2>Photography</h2><div class="sub sans">Family · events · documentary · fine art</div></div>
+  </a>
+</div>
+<div class="demotag">DEMO · option 2: short opening · <a href="homepage-motion-demo.html">option 1: slow zoom</a> · <a href="index.html">current homepage</a></div>
+</body></html>
